@@ -19,10 +19,10 @@ function myAtoi(s: string): number {
   let calcVal = 0;
   while (index < s.length && /[0-9]/.test(s[index])) {
     calcVal = calcVal * 10 + Number.parseInt(s[index]);
-    if (sign * calcVal > Math.pow(2, 31) - 1) return Math.pow(2, 31) - 1;
-    else if (sign * calcVal < -Math.pow(2, 31)) return -Math.pow(2, 31);
     index++;
   }
+  if (sign * calcVal > Math.pow(2, 31) - 1) return Math.pow(2, 31) - 1;
+  else if (sign * calcVal < -Math.pow(2, 31)) return -Math.pow(2, 31);
   return calcVal * sign;
 }
 
