@@ -12,22 +12,8 @@
  * memory usage of your program.
  */
 
-
-
 function findMissingNum(arr: Array<number>): number {
-  let kth = Math.floor(arr.length / 2)
-  let leftKth = 0
-  let rightKth = arr.length
-
-  function findKthNum(kth: number, arr: Array<number>) {
-    if (arr[kth - 1] < kth) {
-      leftKth = kth
-      kth = kth + Math.floor((rightKth - kth) / 2)
-      findKthNum(kth, arr)
-    } else {
-      rightKth = kth
-      kth = Math.floor((leftKth + kth) / 2)
-      findKthNum(kth, arr)
-    }
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] !== i) return i
   }
 }
