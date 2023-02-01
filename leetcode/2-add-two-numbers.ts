@@ -37,13 +37,15 @@ function addTwoNumbers(
   return xList.next;
 }
 
-let l1: ListNode = new ListNode(2);
-l1.next = new ListNode(4);
-l1.next.next = new ListNode(3);
+(function () {
+  let l1: ListNode = new ListNode(2);
+  l1.next = new ListNode(4);
+  l1.next.next = new ListNode(3);
 
-let l2: ListNode = new ListNode(5);
-l2.next = new ListNode(6);
-l2.next.next = new ListNode(4);
+  let l2: ListNode = new ListNode(5);
+  l2.next = new ListNode(6);
+  l2.next.next = new ListNode(4);
 
-let sum = addTwoNumbers(l1, l2);
-console.log(sum);
+  let sum = addTwoNumbers(l1, l2);
+  console.log(sum);
+})();

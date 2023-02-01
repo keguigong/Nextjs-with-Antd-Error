@@ -38,6 +38,8 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
   }
 }
 
-let nums1 = [0, 0, 0, 0, 0];
-let nums2 = [-1, 0, 0, 0, 0, 0, 1];
-console.log(findMedianSortedArrays(nums1, nums2));
+(function () {
+  let nums1 = [0, 0, 0, 0, 0];
+  let nums2 = [-1, 0, 0, 0, 0, 0, 1];
+  console.log(findMedianSortedArrays(nums1, nums2));
+})();

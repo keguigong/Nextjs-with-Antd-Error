@@ -32,5 +32,7 @@ function intToRoman(num: number): string {
   return str;
 }
 
-let num1 = 58
-console.log(intToRoman(num1))
+(function () {
+  let num1 = 58;
+  console.log(intToRoman(num1));
+})();

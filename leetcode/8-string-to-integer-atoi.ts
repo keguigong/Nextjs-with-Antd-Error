@@ -27,5 +27,7 @@ function myAtoi(s: string): number {
   return calcVal * sign;
 }
 
-let str = "-12";
-console.log(myAtoi(str));
+(function () {
+  let str = "-12";
+  console.log(myAtoi(str));
+})();

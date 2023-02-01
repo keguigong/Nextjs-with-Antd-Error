@@ -16,5 +16,7 @@ function isPalindrome(x: number): boolean {
   return initVal === revVal || initVal === Math.floor(revVal / 10)
 };
 
-let num = 10
-console.log(isPalindrome(num))
+(function () {
+  let num = 10
+  console.log(isPalindrome(num))
+})();
