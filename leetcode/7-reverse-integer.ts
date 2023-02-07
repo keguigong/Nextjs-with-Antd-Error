@@ -14,8 +14,6 @@ function reverse(x: number): number {
   return x > 0 ? num : -num;
 }
 
-(function () {
-  let input = -123;
-  // let input = 1534236469;
-  console.log(reverse(input));
-})();
+export let input = -123;
+// let input = 1534236469;
+console.log(reverse(input));

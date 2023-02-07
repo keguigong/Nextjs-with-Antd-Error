@@ -25,5 +25,5 @@ function romanToInt(s: string): number {
   return result;
 }
 
-let roman = "MCMXCIV";
+export let roman = "MCMXCIV";
 console.log(romanToInt(roman));

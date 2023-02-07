@@ -33,7 +33,5 @@ function letterCombinations(digits: string): string[] {
   return comb;
 }
 
-(function () {
-  let digits = "234";
-  console.log(letterCombinations(digits));
-})();
+export let digits = "234";
+console.log(letterCombinations(digits));

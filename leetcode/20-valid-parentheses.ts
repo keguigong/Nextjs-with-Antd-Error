@@ -16,5 +16,5 @@ function isValid(s: string): boolean {
   return s === "";
 }
 
-let brackets = "([])";
+export let brackets = "([])";
 console.log(isValid(brackets));

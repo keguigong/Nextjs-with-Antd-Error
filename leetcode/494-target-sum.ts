@@ -32,6 +32,6 @@ function findTargetSumWays(nums: number[], target: number): number {
   return count;
 }
 
-let nums = [1, 1, 1, 1, 1];
+export let nums = [1, 1, 1, 1, 1];
 let target = 3;
 findTargetSumWays(nums, target);

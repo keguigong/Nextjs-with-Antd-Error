@@ -3,6 +3,8 @@
  * https://leetcode.cn/problems/add-two-numbers/
  */
 
+import { getListNode } from "./21-merge-two-sorted-lists";
+
 class ListNode {
   val: number;
   next: ListNode | null;
@@ -37,15 +39,7 @@ function addTwoNumbers(
   return xList.next;
 }
 
-(function () {
-  let l1: ListNode = new ListNode(2);
-  l1.next = new ListNode(4);
-  l1.next.next = new ListNode(3);
-
-  let l2: ListNode = new ListNode(5);
-  l2.next = new ListNode(6);
-  l2.next.next = new ListNode(4);
-
-  let sum = addTwoNumbers(l1, l2);
-  console.log(sum);
-})();
+export let l1 = getListNode([2, 4, 3])
+let l2 = getListNode([5, 6, 4])
+let sum = addTwoNumbers(l1, l2);
+console.log(sum);

@@ -24,3 +24,6 @@ function getCommonPrefix(str1: string, str2: string): string {
   }
   return commonStr;
 }
+
+export let str = ["aabas", "aaxsad"]
+console.log(longestCommonPrefix(str))

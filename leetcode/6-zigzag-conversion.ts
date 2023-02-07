@@ -61,7 +61,8 @@ function convert1(s: string, numRows: number): string {
   return outstr;
 }
 
-console.log(convert1("PAYPALISHIRING", 3));
+export let str = "PAYPALISHIRING"
+console.log(convert1(str, 3));
 
 // "PAYPALISHIRING", 3
 // P A H N

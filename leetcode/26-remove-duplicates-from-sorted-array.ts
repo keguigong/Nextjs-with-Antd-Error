@@ -16,10 +16,8 @@ function removeDuplicates(nums: number[]): number {
   return left + 1;
 }
 
-(function () {
-  let nums = [1, 1, 2];
-  console.log(removeDuplicates(nums));
-})();
+export let nums = [1, 1, 2];
+console.log(removeDuplicates(nums));
 
 // 简单做法
 function removeDuplicates1(nums: number[]): number {

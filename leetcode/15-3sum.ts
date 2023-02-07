@@ -31,10 +31,8 @@ function threeSum(nums: number[]): number[][] {
   return ans;
 }
 
-(function () {
-  let nums = [-1, 0, 1, 2, -1, -4];
-  console.log(threeSum(nums));
-})();
+export let nums = [-1, 0, 1, 2, -1, -4];
+console.log(threeSum(nums));
 
 // 暴力解法
 function threeSum1(nums: number[]): number[][] {
