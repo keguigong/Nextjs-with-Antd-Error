@@ -3,14 +3,17 @@
  * https://leetcode.cn/problems/climbing-stairs/
  */
 
+// 空间复杂父为O(1)
 export function climbStairs(n: number): number {
-  const dp = []
-  dp[1] = 1
-  dp[2] = 2
-  for (let i = 3; i <= n; i++) {
-    dp[i] = dp[i - 1] + dp[i - 2]
+  let p = 0,
+    q = 0,
+    r = 1
+  for (let i = 1; i <= n; i++) {
+    p = q
+    q = r
+    r = p + q
   }
-  return dp[n]
+  return r
 }
 
 console.log(climbStairs(4))
