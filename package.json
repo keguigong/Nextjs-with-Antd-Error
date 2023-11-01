@@ -1,0 +1,11 @@
+{
+  "name": "my-leetcode-problemset",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:keguigong/my-leetcode-problemset.git",
+  "author": "keguigong <keguigong@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.10"
+  }
+}
