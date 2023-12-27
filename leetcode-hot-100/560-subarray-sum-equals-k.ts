@@ -4,16 +4,23 @@
  */
 
 export function subarraySum(nums: number[], k: number): number {
-  let res = 0
-  for (let left = 0; left < nums.length; left++) {
-    let sum = 0
-    for (let right = left; right < nums.length; right++) {
-      sum += nums[right]
-      if (sum === k) {
-        res++
-      }
+  const map = new Map([[0, 1]])
+  let preSum = 0
+  let count = 0
+
+  for (let i = 0; i < nums.length; i++) {
+    preSum += nums[i]
+
+    if (map.has(preSum - k)) {
+      count += map.get(preSum - k)
+    }
+
+    if (map.has(preSum)) {
+      map.set(preSum, map.get(preSum) + 1)
+    } else {
+      map.set(preSum, 1)
     }
   }
 
-  return res
+  return count
 }
