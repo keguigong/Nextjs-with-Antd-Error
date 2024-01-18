@@ -53,7 +53,7 @@ class Solution:
 
         return area
 
-    def trap(self, height: List[int]) -> int:
+    def trap1(self, height: List[int]) -> int:
         """
         参考：接雨水：双指针解法说明【清晰易懂】
         https://leetcode.cn/problems/trapping-rain-water/solutions/2597032/jie-yu-shui-shuang-zhi-zhen-jie-fa-shuo-4f1f3/?envType=study-plan-v2&envId=top-100-liked

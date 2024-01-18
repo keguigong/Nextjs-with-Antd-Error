@@ -1,6 +1,5 @@
 # 226. 翻转二叉树
 # https://leetcode.cn/problems/invert-binary-tree/
-from tempfile import tempdir
 from typing import Optional
 
 
