@@ -7,6 +7,11 @@ from typing import List
 
 class Solution:
     def trap(self, height: List[int]) -> int:
+        """
+        计算每一个柱子可能的最大雨水，即计算该柱子两侧最大高度。
+        从左边开始计算，左侧的最大高度已知，右侧从末尾开始寻找最大高度
+        若右侧已知最大高度 > 左侧最大高度，则最大高度为左侧值，反之则更新右侧最大高度值，并继续往左侧靠拢
+        """
         length = len(height)
         area, left_max, right_max = 0, 0, 0
 
