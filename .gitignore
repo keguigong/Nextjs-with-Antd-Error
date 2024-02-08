@@ -12,3 +12,5 @@ pakackes-lock.json
 
 # python virtualenv
 venv
+.venv
+.conda
