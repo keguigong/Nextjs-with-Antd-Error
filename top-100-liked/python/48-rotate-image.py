@@ -19,4 +19,3 @@ class Solution:
                     matrix[j][n - i - 1],
                     matrix[i][j],
                 )
-48-rotate-image.py
