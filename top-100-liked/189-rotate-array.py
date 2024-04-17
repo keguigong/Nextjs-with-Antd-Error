@@ -2,6 +2,8 @@
 # https://leetcode.cn/problems/rotate-array/
 from typing import List
 
+def swap(nums: List[int], i: int, j: int):
+    nums[i], nums[j] = nums[j], nums[i]
 
 class Solution:
     def reverse(self, nums: List[int], start: int, end: int) -> None:
@@ -23,13 +25,16 @@ class Solution:
         self.reverse(nums, 0, k - 1)
         self.reverse(nums, k, len(nums) - 1)
 
-        # Complexity: O(n)
-        # if not nums:
-        #     return
-        # k %= len(nums)
-        # for i in range(k):
-        #     temp = nums.pop()
-        #     nums.insert(0, temp)
+
+    def rotate1(self, nums: List[int], k: int):
+        n = len(nums)
+        if n < 2:
+            return
+        for i in range(k):
+            last = nums[-1]
+            for j in range(n - 1, 0, -1):
+                swap(nums, j, j - 1)
+            nums[0] = last
 
 
 solution = Solution()
